@@ -71,6 +71,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/sorethea/filament-modules.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/sorethea/admin.git"
         }
     ]
 }
