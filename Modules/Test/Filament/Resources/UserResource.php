@@ -25,7 +25,7 @@ class UserResource extends Resource
                 TextInput::make("name")
                     ->required(),
                 TextInput::make("email")
-                    ->unique("user","name",ignorable: fn($record)=>$record)
+                    ->unique("users","name",ignorable: fn($record)=>$record)
                     ->required(),
             ]);
     }
