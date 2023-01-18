@@ -1,5 +1,9 @@
 <?php
 
 return [
-    'name' => 'Test'
+    'name' => 'Test',
+    'navigation-group'=>[
+        'name' => 'Test Manu',
+        'enabled' => true,
+    ],
 ];
