@@ -5,6 +5,7 @@ namespace Modules\Test\Providers;
 use Filament\Facades\Filament;
 use Filament\Navigation\NavigationGroup;
 use Filament\PluginServiceProvider;
+use Modules\Test\Filament\Resources\UserResource;
 use Spatie\LaravelPackageTools\Package;
 use Modules\Test\Filament\Pages\TestPage;
 
@@ -17,7 +18,9 @@ class FilamentServiceProvider extends PluginServiceProvider
     protected array $pages = [
         TestPage::class,
     ];
-    protected array $resources =[];
+    protected array $resources =[
+        UserResource::class,
+    ];
     public function configurePackage(Package $package): void
     {
         $package->name('test');
