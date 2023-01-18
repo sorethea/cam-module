@@ -2,6 +2,7 @@
 
 namespace Modules\Test\Providers;
 
+use Filament\PluginServiceProvider;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
 
@@ -38,6 +39,7 @@ class TestServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(RouteServiceProvider::class);
+        $this->app->register(FilamentServiceProvider::class);
     }
 
     /**
