@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Filament\Resources\UserResource\Pages;
+namespace Sorethea\Admin\Filament\Resources\UserResource\Pages;
 
-use App\Filament\Resources\UserResource;
-use Filament\Pages\Actions;
 use Filament\Resources\Pages\CreateRecord;
+use Sorethea\Admin\Filament\Resources\UserResource;
 
 class CreateUser extends CreateRecord
 {

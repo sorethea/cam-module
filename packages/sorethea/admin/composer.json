@@ -1,0 +1,19 @@
+{
+    "name": "sorethea/admin",
+    "description": "Laravel filament admin package",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Sorethea Ok",
+            "email": "sorethea@gmail.com"
+        }
+    ],
+    "require": {
+        "filament/filament": "2.*",
+        "filament/spatie-laravel-media-library-plugin": "2.*",
+        "filament/spatie-laravel-settings-plugin": "2.*",
+        "spatie/laravel-medialibrary": "10.*",
+        "spatie/laravel-permission": "5.*"
+    }
+}

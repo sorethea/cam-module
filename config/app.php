@@ -196,6 +196,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         \Modules\Test\Providers\TestServiceProvider::class,
 
+        Sorethea\Admin\Providers\AdminServiceProvider::class,
     ],
 
     /*
