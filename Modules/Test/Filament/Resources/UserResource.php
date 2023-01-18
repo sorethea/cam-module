@@ -44,8 +44,7 @@ class UserResource extends Resource
                         ->password()
                         ->visibleOn("create")
                         ->required(),
-//                    Forms\Components\SpatieMediaLibraryFileUpload::make("avatar")
-//                        ->collection("avatar")->columnSpan(2)
+                    Forms\Components\FileUpload::make("avatar")->columnSpan(2)
                 ])->columnSpan(2)->columns(2),
                 Forms\Components\Card::make([
                     Forms\Components\Placeholder::make("created_at")
@@ -64,7 +63,7 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\SpatieMediaLibraryImageColumn::make("avatar"),
+                Tables\Columns\ImageColumn::make("avatar"),
                 Tables\Columns\TextColumn::make("name")->searchable(),
                 Tables\Columns\TextColumn::make("email")->searchable(),
                 Tables\Columns\TextColumn::make("created_at")->since(),
