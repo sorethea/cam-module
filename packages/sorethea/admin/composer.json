@@ -15,5 +15,15 @@
         "filament/spatie-laravel-settings-plugin": "2.*",
         "spatie/laravel-medialibrary": "10.*",
         "spatie/laravel-permission": "5.*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sorethea\\Admin\\Providers\\AdminServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
     }
 }

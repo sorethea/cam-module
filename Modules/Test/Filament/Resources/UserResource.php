@@ -3,16 +3,14 @@
 namespace Modules\Test\Filament\Resources;
 
 use Carbon\Carbon;
-use Modules\Test\Filament\Resources\UserResource\Pages;
-use Modules\Test\Filament\Resources\UserResource\RelationManagers;
-use App\Models\User;
 use Filament\Forms;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Modules\Test\Filament\Resources\UserResource\Pages;
+use Modules\Test\Filament\Resources\UserResource\RelationManagers;
+use Sorethea\Admin\Models\User;
 
 class UserResource extends Resource
 {
