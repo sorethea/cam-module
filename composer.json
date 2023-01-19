@@ -73,6 +73,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/sorethea/filakube-admin.git"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/sorethea/admin.git"
         }
     ]
