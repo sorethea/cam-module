@@ -195,7 +195,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         //\Modules\Test\Providers\TestServiceProvider::class,
-        \Sorethea\Admin\Providers\FilamentServiceProvider::class,
 
     ],
 
