@@ -2,6 +2,9 @@
 
 namespace App\Filament\Resources;
 
+use App\Filament\Resources\UserResource\Pages\CreateUser;
+use App\Filament\Resources\UserResource\Pages\EditUser;
+use App\Filament\Resources\UserResource\Pages\ListUsers;
 use App\Filament\Resources\UserResource\RelationManagers;
 use Carbon\Carbon;
 use Filament\Forms;
@@ -90,9 +93,9 @@ class UserResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => App\Filament\Resources\UserResource\Pages\ListUsers::route('/'),
-            'create' => App\Filament\Resources\UserResource\Pages\CreateUser::route('/create'),
-            'edit' => App\Filament\Resources\UserResource\Pages\EditUser::route('/{record}/edit'),
+            'index' => ListUsers::route('/'),
+            'create' => CreateUser::route('/create'),
+            'edit' => EditUser::route('/{record}/edit'),
         ];
     }
 }
