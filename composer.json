@@ -27,7 +27,6 @@
         "psr-4": {
             "App\\": "app/",
             "Modules\\": "Modules/",
-            "Sorethea\\Admin\\": "packages/sorethea/admin/src/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }
