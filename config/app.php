@@ -194,7 +194,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        \Sorethea\Permission\PermissionServiceProvider::class,
+        //\Sorethea\Permission\PermissionServiceProvider::class,
 
     ],
 
