@@ -1,7 +1,8 @@
 {
     "name": "sorethea/admin",
     "description": "Laravel filament admin package",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "type": "filament-plugin",
     "license": "proprietary",
     "authors": [
         {
@@ -9,20 +10,29 @@
             "email": "sorethea@gmail.com"
         }
     ],
+    "keywords": [
+        "sorethea",
+        "admin"
+    ],
     "require": {
-        "filament/filament": "2.*",
-        "filament/spatie-laravel-media-library-plugin": "2.*",
-        "filament/spatie-laravel-settings-plugin": "2.*",
-        "spatie/laravel-medialibrary": "10.*",
-        "spatie/laravel-permission": "5.*"
+        "filament/filament": "^2.16.62",
+        "filament/spatie-laravel-media-library-plugin": "^2.16.62",
+        "filament/spatie-laravel-settings-plugin": "^2.16.62",
+        "spatie/laravel-medialibrary": "^10.7.9",
+        "spatie/laravel-permission": "^5.8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sorethea\\Admin\\": "src/"
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Sorethea\\Admin\\Providers\\AdminServiceProvider"
+                "Sorethea\\Admin\\AdminServiceProvider"
             ],
             "aliases": {
-
+                "Admin": "Sorethea\\Admin\\Facades\\Admin"
             }
         }
     }

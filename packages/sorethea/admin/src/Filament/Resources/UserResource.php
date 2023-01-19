@@ -2,21 +2,29 @@
 
 namespace Sorethea\Admin\Filament\Resources;
 
-use App\Filament\Resources\UserResource\Pages;
-use App\Filament\Resources\UserResource\RelationManagers;
+use Sorethea\Admin\Filament\Resources\UserResource\Pages\CreateUser;
+use Sorethea\Admin\Filament\Resources\UserResource\Pages\EditUser;
+use Sorethea\Admin\Filament\Resources\UserResource\Pages\ListUsers;
+use Sorethea\Admin\Filament\Resources\UserResource\RelationManagers;
 use Carbon\Carbon;
 use Filament\Forms;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
-use Sorethea\Admin\Models\User;
+use App\Models\User;
 
 class UserResource extends Resource
 {
     protected static ?string $model = User::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'heroicon-o-users';
+
+    protected static function getNavigationGroup(): ?string
+    {
+        return config('admin.navigation.name','Administrator');
+    }
+
 
     public static function form(Form $form): Form
     {
@@ -85,9 +93,9 @@ class UserResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => \Sorethea\Admin\Filament\Resources\UserResource\Pages\ListUsers::route('/'),
-            'create' => \Sorethea\Admin\Filament\Resources\UserResource\Pages\CreateUser::route('/create'),
-            'edit' => \Sorethea\Admin\Filament\Resources\UserResource\Pages\EditUser::route('/{record}/edit'),
+            'index' => ListUsers::route('/'),
+            'create' => CreateUser::route('/create'),
+            'edit' => EditUser::route('/{record}/edit'),
         ];
     }
 }
