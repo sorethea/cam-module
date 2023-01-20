@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\Utility\Providers;
+namespace Modules\Utility;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Illuminate\Support\ServiceProvider;
 
 class UtilityServiceProvider extends ServiceProvider
 {

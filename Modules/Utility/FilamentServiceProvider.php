@@ -1,15 +1,15 @@
 <?php
 
-namespace Modules\Utility\Providers;
+namespace Modules\Utility;
 
 use Filament\Facades\Filament;
 use Filament\Navigation\NavigationGroup;
 use Filament\PluginServiceProvider;
+use Modules\Utility\Filament\Pages\UtilityPage;
 use Modules\Utility\Filament\Resources\PermissionResource;
 use Modules\Utility\Filament\Resources\RoleResource;
 use Modules\Utility\Filament\Resources\UserResource;
 use Spatie\LaravelPackageTools\Package;
-use Modules\Utility\Filament\Pages\UtilityPage;
 
 class FilamentServiceProvider extends PluginServiceProvider
 {
