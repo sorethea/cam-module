@@ -2,9 +2,7 @@
 
 namespace Modules\Test\Filament\Resources;
 
-use Modules\Test\Filament\Resources\RoleResource\Pages\CreateRole;
-use Modules\Test\Filament\Resources\RoleResource\Pages\EditRole;
-use Modules\Test\Filament\Resources\RoleResource\Pages\ListRoles;
+use Modules\Test\Filament\Resources\RoleResource\Pages;
 use Modules\Test\Filament\Resources\RoleResource\RelationManagers;
 use Filament\Forms;
 use Filament\Resources\Form;
