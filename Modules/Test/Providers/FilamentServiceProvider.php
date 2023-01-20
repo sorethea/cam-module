@@ -7,6 +7,8 @@ use Filament\Navigation\NavigationGroup;
 use Filament\PluginServiceProvider;
 use Livewire\Livewire;
 use Modules\Test\Filament\Resources\RoleResource;
+use Modules\Test\Filament\Resources\RoleResource\Pages\CreateRole;
+use Modules\Test\Filament\Resources\RoleResource\Pages\EditRole;
 use Spatie\LaravelPackageTools\Package;
 use Modules\Test\Filament\Pages\TestPage;
 
@@ -39,8 +41,8 @@ class FilamentServiceProvider extends PluginServiceProvider
 
     public function boot():void
     {
-        Livewire::component("CreateRole",RoleResource\Pages\CreateRole::class);
-        Livewire::component("EditRole",RoleResource\Pages\CreateRole::class);
+        Livewire::component("CreateRole",CreateRole::class);
+        Livewire::component("EditRole",EditRole::class);
         Filament::serving(function (){
             if(config('test.navigation-group.enabled'))
             Filament::registerNavigationGroups([
