@@ -24,7 +24,7 @@ class RoleResource extends Resource
 
     protected static function getNavigationGroup(): ?string
     {
-        return trans("lang.setting");
+        return config("utility.navigation-group.name");
     }
 
     public static function form(Form $form): Form

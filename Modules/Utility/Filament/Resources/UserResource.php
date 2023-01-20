@@ -22,7 +22,7 @@ class UserResource extends Resource
 
     protected static function getNavigationGroup(): ?string
     {
-        return \trans("lang.setting");
+        return config("utility.navigation-group.name");
     }
 
     public static function form(Form $form): Form
@@ -32,11 +32,11 @@ class UserResource extends Resource
                 Forms\Components\Card::make()->schema([
                     Forms\Components\TextInput::make("name")
                         ->required(),
-                    Forms\Components\TextInput::make("phone")
-                        ->required()
-                        ->unique("users","phone",ignorable: fn($record)=>$record)
-                        ->rule("digits_between:9,10")
-                        ->mask(fn(Forms\Components\TextInput\Mask $mask)=>$mask->pattern('{0}00 000-0000')),
+//                    Forms\Components\TextInput::make("phone")
+//                        ->required()
+//                        ->unique("users","phone",ignorable: fn($record)=>$record)
+//                        ->rule("digits_between:9,10")
+//                        ->mask(fn(Forms\Components\TextInput\Mask $mask)=>$mask->pattern('{0}00 000-0000')),
                     Forms\Components\TextInput::make("password")
                         ->password()
                         ->required()
