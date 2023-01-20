@@ -2,16 +2,16 @@
 
 namespace Modules\Test\Filament\Resources;
 
-use Modules\Test\Filament\Resources\RoleResource\Pages;
+use Modules\Test\Filament\Resources\RoleResource\Pages\CreateRole;
+use Modules\Test\Filament\Resources\RoleResource\Pages\EditRole;
+use Modules\Test\Filament\Resources\RoleResource\Pages\ListRoles;
 use Modules\Test\Filament\Resources\RoleResource\RelationManagers;
-use Modules\Test\Models\Role;
 use Filament\Forms;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Spatie\Permission\Models\Role;
 
 class RoleResource extends Resource
 {
@@ -61,9 +61,9 @@ class RoleResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListRoles::route('/'),
-            'create' => Pages\CreateRole::route('/create'),
-            'edit' => Pages\EditRole::route('/{record}/edit'),
+            'index' => ListRoles::route('/'),
+            'create' => CreateRole::route('/create'),
+            'edit' => EditRole::route('/{record}/edit'),
         ];
     }
 }
