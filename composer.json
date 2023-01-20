@@ -75,15 +75,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/sorethea/filakube-admin.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/sorethea/filament-permission.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/sorethea/admin.git"
+            "url": "https://github.com/sorethea/admin-module.git"
         }
     ]
 }
