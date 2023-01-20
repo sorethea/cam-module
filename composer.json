@@ -12,6 +12,7 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "nwidart/laravel-modules": "9.*",
+        "joshbrw/laravel-module-installer": "2.*",
         "sorethea/filament-modules": "dev-main",
         "spatie/laravel-medialibrary": "10.7.9"
     },
