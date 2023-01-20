@@ -59,9 +59,9 @@ class RoleResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => RoleResource\Pages\ListRoles::route('/'),
-            'create' => RoleResource\Pages\CreateRole::route('/create'),
-            'edit' => RoleResource\Pages\EditRole::route('/{record}/edit'),
+            'index' => ListRoles::route('/'),
+            'create' => CreateRole::route('/create'),
+            'edit' => EditRole::route('/{record}/edit'),
         ];
     }
 }
