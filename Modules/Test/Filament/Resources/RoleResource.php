@@ -2,7 +2,6 @@
 
 namespace Modules\Test\Filament\Resources;
 
-use Modules\Test\Filament\Resources\RoleResource\Pages;
 use Modules\Test\Filament\Resources\RoleResource\RelationManagers;
 use Filament\Forms;
 use Filament\Resources\Form;
@@ -59,9 +58,9 @@ class RoleResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => ListRoles::route('/'),
-            'create' => CreateRole::route('/create'),
-            'edit' => EditRole::route('/{record}/edit'),
+            'index' => RoleResource\Pages\ListRoles::route('/'),
+            'create' => RoleResource\Pages\CreateRole::route('/create'),
+            'edit' => RoleResource\Pages\EditRole::route('/{record}/edit'),
         ];
     }
 }
