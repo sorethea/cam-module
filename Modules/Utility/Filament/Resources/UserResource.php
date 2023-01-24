@@ -22,7 +22,7 @@ class UserResource extends Resource
 
     protected static function getNavigationGroup(): ?string
     {
-        return \trans("lang.setting");
+        return config("utility.navigation-group.name");
     }
 
     public static function form(Form $form): Form
@@ -53,7 +53,6 @@ class UserResource extends Resource
                     Forms\Components\BelongsToManyMultiSelect::make("roles")
                         ->relationship("roles","name")
                         ->required(),
-                    Forms\Components\Toggle::make("active"),
                 ])->columnSpan(1),
 
             ])->columns(3);
