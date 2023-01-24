@@ -198,7 +198,7 @@ return [
         \Modules\Utility\UtilityServiceProvider::class,
 
         //Sorethea\Core\CoreServiceProvider::class,
-        Sorethea\Filament\Providers\FilamentModuleServiceProvider::class,
+        Sorethea\Filament\Providers\FilamentServiceProvider::class,
     ],
 
     /*
