@@ -2,8 +2,8 @@
 
 namespace Sorethea\Core\Filament\Resources;
 
-use Sorethea\Hieat\Filament\Resources\UserResource\Pages;
-use Sorethea\Hieat\Filament\Resources\UserResource\RelationManagers;
+use Sorethea\Core\Filament\Resources\UserResource\Pages;
+use Sorethea\Core\Filament\Resources\UserResource\RelationManagers;
 use App\Models\User;
 use Filament\Forms;
 use Filament\Resources\Form;

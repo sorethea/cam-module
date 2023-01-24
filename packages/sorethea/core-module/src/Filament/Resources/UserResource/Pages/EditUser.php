@@ -1,10 +1,10 @@
 <?php
 
-namespace Sorethea\Hieat\Filament\Resources\Settings\UserResource\Pages;
+namespace Sorethea\Core\Filament\Resources\UserResource\Pages;
 
-use Sorethea\Hieat\Filament\Resources\Settings\UserResource;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\EditRecord;
+use Sorethea\Core\Filament\Resources\UserResource;
 
 class EditUser extends EditRecord
 {

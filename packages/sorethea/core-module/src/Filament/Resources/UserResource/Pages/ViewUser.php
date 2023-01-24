@@ -1,8 +1,8 @@
 <?php
 
-namespace Sorethea\Hieat\Filament\Resources\Settings\UserResource\Pages;
+namespace Sorethea\Core\Filament\Resources\UserResource\Pages;
 
-use Sorethea\Hieat\Filament\Resources\Settings\UserResource;
+use Sorethea\Core\Filament\Resources\UserResource;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\ViewRecord;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sorethea\Hieat\Filament\Resources\Settings\UserResource\Pages;
+namespace Sorethea\Core\Filament\Resources\UserResource\Pages;
 
 use Sorethea\Hieat\Filament\Resources\Settings\UserResource;
 use Filament\Pages\Actions;
