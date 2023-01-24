@@ -195,7 +195,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         //\Sorethea\Permission\PermissionServiceProvider::class,
-        \Modules\Test\TestServiceProvider::class,
+        //\Modules\Test\TestServiceProvider::class,
 
 
         //Sorethea\Core\CoreServiceProvider::class,
