@@ -197,7 +197,7 @@ return [
         //\Sorethea\Permission\PermissionServiceProvider::class,
         \Modules\Utility\UtilityServiceProvider::class,
 
-        Sorethea\Core\CoreServiceProvider::class,
+        //Sorethea\Core\CoreServiceProvider::class,
     ],
 
     /*
