@@ -22,7 +22,7 @@ class UserResource extends Resource
 
     protected static function getNavigationGroup(): ?string
     {
-        return config("utility.navigation-group.name");
+        return config("test.navigation-group.name");
     }
 
     public static function form(Form $form): Form
