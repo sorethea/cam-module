@@ -33,6 +33,7 @@
             "Modules\\": "Modules/",
             "Sorethea\\Permission\\": "packages/sorethea/permission/src/",
             "Sorethea\\Core\\": "packages/sorethea/core-module/src/",
+            "Sorethea\\Filament\\": "packages/sorethea/filament/src/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }
