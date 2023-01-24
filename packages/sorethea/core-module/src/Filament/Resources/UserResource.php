@@ -95,10 +95,10 @@ class UserResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => \Sorethea\Hieat\Filament\Resources\Settings\UserResource\Pages\ListUsers::route('/'),
-            'create' => \Sorethea\Hieat\Filament\Resources\Settings\UserResource\Pages\CreateUser::route('/create'),
-            'view' => \Sorethea\Hieat\Filament\Resources\Settings\UserResource\Pages\ViewUser::route('/{record}'),
-            'edit' => \Sorethea\Hieat\Filament\Resources\Settings\UserResource\Pages\EditUser::route('/{record}/edit'),
+            'index' => \Sorethea\Core\Filament\Resources\UserResource\Pages\ListUsers::route('/'),
+            'create' => \Sorethea\Core\Filament\Resources\UserResource\Pages\CreateUser::route('/create'),
+            'view' => \Sorethea\Core\Filament\Resources\UserResource\Pages\ViewUser::route('/{record}'),
+            'edit' => \Sorethea\Core\Filament\Resources\UserResource\Pages\EditUser::route('/{record}/edit'),
         ];
     }
 
