@@ -13,6 +13,20 @@ class FilamentServiceProvider extends PluginServiceProvider
     protected array $resources = [
         UserResource::class,
     ];
+
+    protected function getResources(): array
+    {
+        $resources = [];
+        $module = \Module::find("utility");
+        if($module->isEnabled()){
+            $resources =[
+                UserResource::class,
+            ];
+        }
+
+        return $resources;
+    }
+
     public function configurePackage(Package $package): void
     {
         $package->name("utility");
